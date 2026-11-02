@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to DocumentXchange with Apple or Google to save searches and track public-record requests.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://documentxchange.app/account">
+  <title>Account — DocumentXchange</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/portal.css">
+</head>
+<body class="portal-body">
+  <header class="site-header portal-header">
+    <a class="brand" href="/"><span class="brand-mark">DX</span><span>DocumentXchange</span></a>
+    <a class="button button-small button-outline" href="/">Back to home</a>
+  </header>
+  <main class="auth-shell">
+    <section class="auth-intro">
+      <p class="eyebrow">Your records workspace</p>
+      <h1>Keep the search moving.</h1>
+      <p>Search and purchase records on the web, save searches, and receive matching alerts from one account.</p>
+      <ul class="benefit-list"><li>County-wide document and request alerts</li><li>Saved documents and sellers</li><li>Purchased records in your library</li><li>Use the same Apple or Google account on web, iPhone, and Android</li></ul>
+    </section>
+    <section class="auth-card oauth-card" aria-labelledby="auth-title">
+      <div class="auth-brand-mark" aria-hidden="true">DX</div>
+      <h2 id="auth-title">Sign in to DocumentXchange</h2>
+      <p id="auth-subtitle">Use the same account you use in the mobile app.</p>
+      <div class="oauth-actions" id="oauth-actions">
+        <button class="oauth-button oauth-apple" type="button" data-provider="apple"><span class="oauth-icon apple-icon" aria-hidden="true">●</span><span>Sign in with Apple</span></button>
+        <button class="oauth-button oauth-google" type="button" data-provider="google"><span class="oauth-icon google-icon" aria-hidden="true">G</span><span>Sign in with Google</span></button>
+      </div>
+      <p class="auth-privacy-note"><strong>Your privacy matters to us.</strong> DocumentXchange requires Apple or Google sign-in so your identity is verified by a trusted provider and we never need to store a separate DocumentXchange password.</p>
+      <p class="form-message" id="auth-message" role="status" aria-live="polite"></p>
+      <p class="fine-print">By continuing, you agree to the <a href="/terms">User Agreement</a> and acknowledge the <a href="/privacy">Privacy Policy</a>.</p>
+    </section>
+  </main>
+  <script src="/portal.js"></script>
+</body>
+</html>

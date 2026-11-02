@@ -1,0 +1,30 @@
+{
+  "name": "DocumentXchange",
+  "short_name": "DocumentXchange",
+  "description": "Request public records, search OCR-indexed listings, and earn by fulfilling community requests.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#0c2340",
+  "icons": [
+    {
+      "src": "/documentxchange-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.jstocke2.documentxchange",
+      "id": "com.jstocke2.documentxchange"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/us/app/documentxchange/id6798885846",
+      "id": "6798885846"
+    }
+  ],
+  "prefer_related_applications": true
+}

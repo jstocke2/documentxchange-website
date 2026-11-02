@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Get help with DocumentXchange accounts, purchases, requests, U.S. contributor eligibility, uploads, royalties, and copyright concerns."
+  >
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="DocumentXchange Support">
+  <meta property="og:description" content="Get help with DocumentXchange accounts, purchases, requests, enforced U.S. contributor eligibility, uploads, royalties, privacy, and copyright concerns.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://documentxchange.app/support">
+  <meta property="og:site_name" content="DocumentXchange">
+  <title>DocumentXchange Support</title>
+  <link rel="canonical" href="https://documentxchange.app/support">
+
+  <style>
+    :root {
+      --navy: #162847;
+      --gold: #d2aa45;
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #687386;
+      --border: #e2e7ee;
+      --success: #168447;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--background);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--navy);
+    }
+
+    header {
+      color: white;
+      background:
+        radial-gradient(circle at top right, rgba(210, 170, 69, 0.3), transparent 36%),
+        linear-gradient(135deg, #162847, #223e6c);
+    }
+
+    nav {
+      width: min(1100px, calc(100% - 40px));
+      margin: auto;
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    nav a:not(.brand) {
+      color: white;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .hero {
+      width: min(850px, calc(100% - 40px));
+      margin: auto;
+      padding: 70px 0 90px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #f0d487;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 8vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 22px auto 30px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      min-height: 48px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      color: var(--navy);
+      background: var(--gold);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    main {
+      width: min(1000px, calc(100% - 40px));
+      margin: -38px auto 70px;
+    }
+
+    section {
+      margin-bottom: 48px;
+      scroll-margin-top: 20px;
+    }
+
+    .intro-card,
+    .contact-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface);
+      box-shadow: 0 14px 40px rgba(22, 40, 71, 0.08);
+    }
+
+    .intro-card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .quick-help strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--navy);
+    }
+
+    .quick-help p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--navy);
+      font-size: 30px;
+      letter-spacing: -0.7px;
+    }
+
+    .section-intro {
+      max-width: 700px;
+      margin: -8px 0 22px;
+      color: var(--muted);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    details {
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+
+    summary {
+      color: var(--navy);
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .steps {
+      padding-left: 22px;
+    }
+
+    .steps li {
+      margin-bottom: 8px;
+    }
+
+    .notice {
+      padding: 18px;
+      border-left: 4px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      background: #fff9e9;
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+    }
+
+    .contact-details {
+      padding: 20px;
+      border-radius: 14px;
+      background: var(--background);
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+    }
+
+    footer {
+      padding: 34px 20px;
+      color: rgba(255, 255, 255, 0.72);
+      background: var(--navy);
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+    }
+
+    .intro-card.visible {
+      display: block;
+    }
+
+    .eyebrow.gold {
+      color: var(--gold);
+    }
+
+    @media (max-width: 720px) {
+      nav {
+        align-items: flex-start;
+      }
+
+      .hero {
+        padding: 48px 0 72px;
+      }
+
+      .intro-card,
+      .faq-grid,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        letter-spacing: -1.3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a class="brand" href="/">DocumentXchange</a>
+      <a href="/privacy">Privacy Policy</a>
+    </nav>
+
+    <div class="hero">
+      <p class="eyebrow">DocumentXchange Support</p>
+      <h1>How can we help?</h1>
+      <p>
+        Find answers about accounts, document requests, uploads, purchases,
+        contributor eligibility, royalties, privacy, and copyright concerns.
+      </p>
+      <a class="button" href="mailto:documentxchangesupport@gmail.com">
+        Email Support
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-card" aria-label="Quick help">
+      <div class="quick-help">
+        <strong>Account help</strong>
+        <p>Sign-in, profile, privacy, and account deletion assistance.</p>
+      </div>
+
+      <div class="quick-help">
+        <strong>Purchases and requests</strong>
+        <p>Help accessing purchases or resolving request issues.</p>
+      </div>
+
+      <div class="quick-help">
+        <strong>Contributor support</strong>
+        <p>U.S. eligibility, upload, document-quality, royalty, and payout guidance.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently asked questions</h2>
+      <p class="section-intro">
+        Start here for answers to the most common DocumentXchange questions.
+      </p>
+
+      <div class="faq-grid">
+        <details>
+          <summary>What is DocumentXchange?</summary>
+          <p>
+            DocumentXchange is a marketplace where users can request, contribute,
+            search for, purchase, and access public-record documents and related
+            metadata. DocumentXchange is not a government agency, law firm, title
+            company, or official records custodian.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I request a document?</summary>
+          <p>
+            In the U.S. mobile app, open the Request tab, select the document type and location, and add
+            any identifying details that can help locate the correct record.
+            DocumentXchange estimates the page count and applicable purchase price
+            automatically. Posting is free, and you pay only if you choose to buy
+            a document submitted for the request. Requests remain open for 14 days.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I contribute a document?</summary>
+          <p>
+            In the U.S. mobile app, eligible U.S.-based contributors can select Contribute, photograph
+            every page clearly, keep every line, signature, seal, page number,
+            and other meaningful detail visible, provide accurate document
+            details, and review the automated quality results. Showing the
+            physical page edges is preferred, but a tight intact scan is
+            acceptable when nothing is clipped. You must have the legal right
+            to distribute every page.
+          </p>
+        </details>
+
+        <details>
+          <summary>How does the requester promotion work?</summary>
+          <p>
+            If the offer appears in your account, you may explicitly apply it
+            when posting an eligible request or leave it off for later.
+            Requests are always free to post. Each requester may claim one
+            offer per campaign. Once you submit an opted-in request, the offer
+            is claimed even if that request is later cancelled or expires.
+            Only the requester who posted that request can receive the
+            promotional price, and only when buying the approved document that
+            fulfills it. Checkout shows the exact price, the contributor's
+            normal target payout is unchanged, and DocumentXchange keeps $0;
+            external Apple/Google/Stripe/tax/refund/payout costs may apply.
+          </p>
+        </details>
+
+        <details>
+          <summary>Must contributors be based in the United States?</summary>
+          <p>
+            Yes. Uploading documents, publishing listings, and fulfilling
+            requests are limited to U.S.-based
+            contributors. The website supports browsing, purchasing, saved
+            searches, libraries, and account management, but it does not accept
+            new requests, uploads, or request fulfillment. New requests must be
+            submitted through the U.S. mobile app.
+          </p>
+          <p>
+            This restriction is enforced by the DocumentXchange backend across
+            the website, iPhone app, and Android app. Before accepting an upload,
+            DocumentXchange verifies that the contributor's Stripe account is a
+            U.S. account, required identity and address details were submitted,
+            and payouts are enabled. When a reliable network-country signal is
+            available, an explicitly non-U.S. upload location is also blocked.
+            Complete or update verification under Profile → Payment Methods.
+          </p>
+        </details>
+
+        <details>
+          <summary>How does document scanning work?</summary>
+          <p>
+            DocumentXchange may use OCR and artificial intelligence to extract
+            searchable information, detect possible duplicates, classify records,
+            and identify quality problems. Each page is also checked for clipped
+            text, signatures, seals, page numbers, tables, and other content at
+            its image boundaries. High-confidence cropped pages are rejected;
+            uncertain cases remain private for administrator review. Automated
+            results can be inaccurate, so contributors must still review every
+            page and field.
+          </p>
+          <p>
+            The upload normally finishes in about 10–20 seconds. OCR and full
+            document validation continue privately in the background and may take
+            up to 5 minutes. The document is not available to buyers while these
+            checks are running. DocumentXchange notifies the contributor when the
+            document is approved or needs attention.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do contributor royalties work?</summary>
+          <p>
+            Eligible contributors receive the royalty percentage displayed in
+            the app when uploading or fulfilling a request. Royalties may be
+            adjusted for refunds, chargebacks, duplicate or unlawful content,
+            fraud, and payment reversals.
+          </p>
+        </details>
+
+        <details>
+          <summary>Where can I see documents I purchased?</summary>
+          <p>
+            Sign in and open Library. Purchased documents should appear under
+            your document purchases. If a completed purchase is missing, contact
+            support with the purchase date and document title.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I request a refund?</summary>
+          <p>
+            Purchases made through Apple are subject to Apple’s refund process
+            and policies. For missing, inaccessible, unlawfully posted, or
+            materially misdescribed content, contact DocumentXchange support so
+            we can investigate.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I report an inappropriate document?</summary>
+          <p>
+            Use the report option available on the document or page. Include the
+            affected page numbers and a clear explanation. For urgent privacy,
+            safety, or legal concerns, email support directly.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I delete my account?</summary>
+          <p>
+            Open Profile, select Delete Account, and confirm the request.
+            Transaction, payout, fraud-prevention, dispute, and legal-compliance
+            records may be retained when required or permitted by law.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is DocumentXchange an official records source?</summary>
+          <p>
+            No. Documents are contributed by users. Verify important records
+            directly with the appropriate court, county recorder, government
+            office, or other official custodian before relying on them.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section id="account-deletion">
+      <h2>Account deletion</h2>
+      <div class="intro-card visible">
+        <ol class="steps">
+          <li>Open DocumentXchange and sign in.</li>
+          <li>Open the <strong>Profile</strong> tab.</li>
+          <li>Select <strong>Delete Account</strong>.</li>
+          <li>Read the confirmation notice and confirm deletion.</li>
+        </ol>
+
+        <p>
+          If you cannot access the app, email
+          <a href="mailto:documentxchangesupport@gmail.com">
+            documentxchangesupport@gmail.com
+          </a>
+          from the email address associated with your account.
+        </p>
+
+        <div class="notice">
+          Account deletion removes or de-identifies account data and contributed
+          content from active systems, subject to reasonable processing time and
+          legally required retention. Copies already purchased or downloaded by
+          other users cannot necessarily be removed from their possession.
+        </div>
+      </div>
+    </section>
+
+    <section id="copyright">
+      <h2>Copyright and DMCA notices</h2>
+      <div class="intro-card visible">
+        <p>
+          Copyright owners or authorized agents may submit notices of claimed
+          infringement to the registered DocumentXchange DMCA agent. Include all
+          information required by 17 U.S.C. § 512, including identification of
+          the copyrighted work, the exact location of the challenged material,
+          your complete contact information, the required good-faith and
+          accuracy statements, and a physical or electronic signature.
+        </p>
+
+        <p>
+          Send notices and counter-notices to:
+        </p>
+
+        <address>
+          <strong>Jake Stocker</strong><br>
+          Designated DMCA Agent, DocumentXchange LLC<br>
+          263 Forbes St NE<br>
+          New Philadelphia, OH 44663<br>
+          Telephone:
+          <a href="tel:+16149062531">(614) 906-2531</a><br>
+          Email:
+          <a href="mailto:documentxchangesupport@gmail.com">
+            documentxchangesupport@gmail.com
+          </a><br>
+          Registration number: <strong>DMCA-1077714</strong>
+        </address>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow gold">Contact us</p>
+          <h2>Still need help?</h2>
+          <p>
+            Send a detailed description of the issue. For purchase problems,
+            include the transaction date and document or request title, but do
+            not email passwords, full payment-card numbers, Social Security
+            numbers, or other sensitive information.
+          </p>
+          <a class="button" href="mailto:documentxchangesupport@gmail.com">
+            Contact DocumentXchange
+          </a>
+        </div>
+
+        <div class="contact-details">
+          <strong>Support email</strong>
+          <p>
+            <a href="mailto:documentxchangesupport@gmail.com">
+              documentxchangesupport@gmail.com
+            </a>
+          </p>
+          <p>We review account, purchase, privacy, and content concerns.</p>
+          <strong>Follow DocumentXchange</strong>
+          <p>
+            <a href="https://www.facebook.com/profile.php?id=61593075361636" target="_blank" rel="noopener noreferrer">Facebook</a>
+            &nbsp;•&nbsp;
+            <a href="https://www.instagram.com/documentxchange/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 DocumentXchange LLC. All rights reserved.
+    </p>
+    <p>
+      <a href="mailto:documentxchangesupport@gmail.com">Support</a>
+      &nbsp;•&nbsp;
+      <a href="/privacy">Privacy Policy</a>
+      &nbsp;•&nbsp;
+      <a href="#account-deletion">Account Deletion</a>
+      &nbsp;•&nbsp;
+      <a href="#copyright">DMCA</a>
+      &nbsp;•&nbsp;
+      <a href="https://www.facebook.com/profile.php?id=61593075361636" target="_blank" rel="noopener noreferrer">Facebook</a>
+      &nbsp;•&nbsp;
+      <a href="https://www.instagram.com/documentxchange/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://js.stripe.com https://*.js.stripe.com 'sha256-7l8OSsFsUMHWgarAAeaBDpOkOiDbsMvBT/cA/lvQrjA='; img-src 'self' data: https://*.stripe.com https://*.link.com; connect-src 'self' https://api.stripe.com https://link.com https://*.link.com; frame-src https://js.stripe.com https://*.js.stripe.com https://hooks.stripe.com https://link.com https://*.link.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://hooks.stripe.com
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/site.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/founder*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/account*
+  X-Robots-Tag: noindex, follow
+
+/portal*
+  X-Robots-Tag: noindex, follow
+
+/checkout*
+  X-Robots-Tag: noindex, follow
