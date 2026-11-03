@@ -164,6 +164,17 @@ await build({
   },
 });
 
+await build({
+  ...websiteConfig,
+  root: resolve(source, 'projects/react-form'),
+  base: './',
+  build: {
+    outDir: resolve(output, 'projects/react-form'),
+    emptyOutDir: true,
+    sourcemap: true,
+  },
+});
+
 // PDF.js runs entirely in the browser so a seller's PDF is converted into
 // page images before the existing OCR/validation upload pipeline receives it.
 // Vendor the pinned package into the static build instead of loading runtime

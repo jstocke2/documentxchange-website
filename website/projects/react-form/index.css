@@ -1,0 +1,100 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #12302d;
+  background: #ccfbf1;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+
+button, input, select, textarea { font: inherit; }
+
+.back-link {
+  position: fixed;
+  z-index: 10;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid rgba(13, 148, 136, 0.35);
+  border-radius: 999px;
+  color: #115e59;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 24px rgba(15, 118, 110, 0.12);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.back-link:hover, .back-link:focus-visible { background: #f0fdfa; }
+
+.page-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 5.5rem 1.25rem 2rem;
+  background: radial-gradient(circle at top, #f0fdfa 0, #ccfbf1 45%, #99f6e4 100%);
+}
+
+.form-card {
+  width: min(100%, 680px);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgba(13, 148, 136, 0.24);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 24px 60px rgba(15, 118, 110, 0.18);
+}
+
+.eyebrow { margin: 0 0 0.5rem; color: #0f766e; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+h1 { margin: 0; color: #134e4a; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1; }
+.intro { margin: 1rem 0 2rem; color: #4b6562; line-height: 1.6; }
+
+form { display: flex; flex-direction: column; gap: 0.5rem; }
+form > label, legend { color: #134e4a; font-weight: 700; }
+
+input[type="email"], input[type="password"], textarea, select {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid #5eead4;
+  border-radius: 12px;
+  color: #12302d;
+  background: #f8fffd;
+}
+
+textarea { min-height: 90px; resize: vertical; }
+input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid rgba(20, 184, 166, 0.25); border-color: #0d9488; }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0.4rem 0 0.9rem;
+  padding: 1rem;
+  border: 1px solid #99f6e4;
+  border-radius: 14px;
+  background: #f0fdfa;
+}
+
+fieldset label { cursor: pointer; }
+input[type="checkbox"], input[type="radio"] { margin-right: 0.55rem; accent-color: #0d9488; }
+
+button {
+  margin-top: 1rem;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid #0f766e;
+  border-radius: 999px;
+  color: white;
+  background: #0f766e;
+  cursor: pointer;
+  font-weight: 800;
+  transition: transform 120ms ease, background 120ms ease;
+}
+
+button:hover { background: #115e59; transform: translateY(-1px); }
+button:focus-visible { outline: 3px solid rgba(20, 184, 166, 0.35); outline-offset: 3px; }
+
+@media (max-width: 520px) {
+  .back-link { position: absolute; }
+  .form-card { border-radius: 18px; }
+}
