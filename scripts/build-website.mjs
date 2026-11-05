@@ -175,6 +175,17 @@ await build({
   },
 });
 
+await build({
+  ...websiteConfig,
+  root: resolve(source, 'projects/chef-claude-hardcoded'),
+  base: './',
+  build: {
+    outDir: resolve(output, 'projects/chef-claude-hardcoded'),
+    emptyOutDir: true,
+    sourcemap: true,
+  },
+});
+
 // PDF.js runs entirely in the browser so a seller's PDF is converted into
 // page images before the existing OCR/validation upload pipeline receives it.
 // Vendor the pinned package into the static build instead of loading runtime
